@@ -13,19 +13,38 @@ my_array = [7,12,9,11,3]
 # we run throw the whole array
 # in the inner loop n times
 
-import time
-
-start = time.time()
-
 n = len(my_array)
 
 for i in range(n-1):
     for j in range(n-i-1):
-        if my_array[j+1]<my_array[j]:
-            my_array[j],my_array[j+1]=my_array[j+1],my_array[j]
+        if my_array[j]>my_array[j+1]:
+            my_array[j],my_array[j+1] = my_array[j+1],my_array[j]
 
-print("Sorrted:",my_array)
+print(my_array) 
 
-end = time.time() - start
 
-print("Time taken: ",end)
+
+
+
+
+
+
+
+
+
+# import time
+
+# start = time.time()
+
+# n = len(my_array)
+
+# for i in range(n-1):
+#     for j in range(n-i-1):
+#         if my_array[j+1]<my_array[j]:
+#             my_array[j],my_array[j+1]=my_array[j+1],my_array[j]
+
+# print("Sorrted:",my_array)
+
+# end = time.time() - start
+
+# print("Time taken: ",end)
